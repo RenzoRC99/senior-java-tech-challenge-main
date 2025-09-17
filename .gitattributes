@@ -1,0 +1,20 @@
+# Normalizar finales de línea
+* text=auto eol=lf
+
+# Archivos de texto que queremos forzar a LF
+*.java     text eol=lf
+*.gradle   text eol=lf
+*.md       text eol=lf
+*.yml      text eol=lf
+*.yaml     text eol=lf
+*.properties text eol=lf
+
+# Archivos binarios (no mostrar diffs)
+*.png      binary
+*.jpg      binary
+*.jpeg     binary
+*.gif      binary
+*.class    binary
+*.jar      binary
+*.zip      binary
+*.pdf      binary

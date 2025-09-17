@@ -1,0 +1,28 @@
+### Compilados de Java ###
+/target/
+/out/
+/build/
+
+### Archivos de IntelliJ IDEA ###
+/.idea/
+/*.iml
+
+### Archivos de Gradle ###
+/.gradle/
+/**/build/
+/**/out/
+
+### Sistema operativo ###
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+desktop.ini
+
+### Logs y temporales ###
+*.log
+*.tmp
+
+### Configuración local ###
+/.env
+/local.properties
