@@ -4,7 +4,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import org.hibernate.validator.constraints.UUID;
 
-public record CreateProductRequest(
+public record ProductRequest(
         @UUID(message = "El id debe ser un UUID válido")
         String id,                     // UUID generado por el front
 
