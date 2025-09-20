@@ -25,16 +25,16 @@ public class Product {
         );
     }
 
-    public UUID getId() {
-        return id.value();
+    public ProductId getId() {
+        return id;
     }
 
-    public String getName() {
-        return name.value();
+    public ProductName getName() {
+        return name;
     }
 
-    public String getDescription() {
-        return description.value();
+    public ProductDescription getDescription() {
+        return description;
     }
 
     public void rename(ProductName newName) {

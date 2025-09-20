@@ -12,6 +12,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "products")
 public class ProductEntity {
+
     @Id
     @Column(columnDefinition = "CHAR(36)")
     @JdbcTypeCode(SqlTypes.CHAR)
@@ -24,27 +25,13 @@ public class ProductEntity {
     // Constructor vacío requerido por JPA
     public ProductEntity() {}
 
-    public UUID getId() {
-        return id;
-    }
+    // Setters
+    public void setId(UUID id) { this.id = id; }
+    public void setName(String name) { this.name = name; }
+    public void setDescription(String description) { this.description = description; }
 
-    public void setId(UUID id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
+    // Getters 
+    public UUID getId() { return id; }
+    public String getName() { return name; }
+    public String getDescription() { return description; }
 }

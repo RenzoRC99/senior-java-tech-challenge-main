@@ -19,9 +19,9 @@ public class ProductMapper implements InfrastructureMapper<Product, ProductEntit
     @Override
     public ProductEntity toEntity(Product domain) {
         ProductEntity entity = new ProductEntity();
-        entity.setId(domain.getId());
-        entity.setName(domain.getName());
-        entity.setDescription(domain.getDescription());
+        entity.setId(domain.getId().value());
+        entity.setName(domain.getName().value());
+        entity.setDescription(domain.getDescription().value());
 
         return  entity;
     }
