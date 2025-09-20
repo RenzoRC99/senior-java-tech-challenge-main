@@ -21,6 +21,6 @@ public class ProductService {
                 description
         );
         productRepository.save(product);
-        return product.getId();
+        return product.getId().value();
     }
 }
